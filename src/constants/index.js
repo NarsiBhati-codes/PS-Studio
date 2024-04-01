@@ -1,5 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { hero1,customer1, customer2, Narsi, Mohit} from "../assets/images";
+import { hero1,customer1, customer2, Narsi, Gagandeep} from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -88,9 +88,9 @@ export const Team = [
        about: 'Creates and maintains the server-side logic, database, and APIs of PS-Studio, ensuring performance, and scalability using technologies like React Route, Node JS, AppWrite.',
     },
     {
-        name: 'Mohit Kumar',
+        name: 'Gagandeep Sodhi',
         post:'Frontend Developer: ',
-        img: Mohit,
+        img: Gagandeep,
         about: 'Designs the user interface and experience, coding interactive and visually appealing web interfaces using technologies like React JS,NextUI ,Tailwind CSS.',
     },
 ];

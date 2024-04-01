@@ -27,7 +27,7 @@ export default function LogoutModal() {
       .deleteSession(session.$id)
       .then(() => {
         setLoading(false);
-        navigate("/login");
+        navigate("/");
         toast.success("Logged out successfully!", { theme: "colored" });
       })
       .catch((err: AppwriteException) => {

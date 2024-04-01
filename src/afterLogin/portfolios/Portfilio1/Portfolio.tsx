@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Portfolio.scss";
+// import "./Portfolio.scss";
 import Hero from "../../components/hero/Hero";
 import Navbar from "../../components/navbar/Navbar";
 import Parallax from "../../components/parallax/Parallax";

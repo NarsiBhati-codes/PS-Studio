@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useEffect, useRef } from "react";
 import { account } from "../config/appwriteConfig";
 import { userStore } from "../state/userStore";
@@ -6,14 +6,14 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import AppNavbar from './AppNavbar';
 import { Models } from 'appwrite';
-import { Input } from '@nextui-org/react';
-import { Avatar } from '@nextui-org/react';
+import { Button, Input } from '@nextui-org/react';
 
 const Profile = () => {
     const isRendered = useRef<boolean>(false);
     const userState = userStore();
     const navigate = useNavigate();
-    
+    const [loading, setLoading] = useState<boolean>(false);
+
     const user = userStore(
       (state) => state.user
     ) as Models.User<Models.Preferences>;
@@ -35,34 +35,52 @@ const Profile = () => {
         isRendered.current = true;
       }
     }, []);
+
+
   return (
     <>
       <AppNavbar/>
-      {/* <div className="h-screen w-screen flex justify-center items-center bg-slate-300">
-        <div className=" bg-white px-4 py-6 rounded-lg shadow-md"> 
-        <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" className="w-20 h-20 text-large" />
-              <h1>{user.name}</h1>
-        </div>
-        <div className="w-[1100px] h-[600px] p-7 rounded-md shadow-lg bg-white">
-        <ul className='flex'>
-          <li className='flex m-2'>
-            <Input
+      <div className="h-screen w-screen flex justify-center items-center shadow-lg">
+        <div>
+        <div className="h-screen flex justify-center items-center">
+          <div className="w-[600px]  h-[600px] rounded-md shadow-lg ">
+          <h1 className="text-3xl font-bold text-red-400 text-center">
+              Details</h1>
+            <form>
+           <div className="mt-8">
+              <Input
               label="Name"
               type="text"
-              value={user.name}
-            />
-          </li>
-          <li className='flex m-2'>
+              placeholder={user.name}
+             />
+            </div>
+          <div className="mt-8">
             <Input
               label="Email"
               type="email"
-              value={user.email}
+              placeholder={user.email}
             />
-          </li>
-
-        </ul>
+          </div>
+          <div className="mt-8">
+            <Input
+              label="Password"
+              type="password"
+            />
+          </div>
+          <div className="mt-8">
+            <Button
+              color="danger"
+              className="w-full"
+              type="submit"
+            >
+              {loading ? "Processing.." : "Update Details"}
+            </Button>
+          </div>
+          </form>
+          </div>
+          </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

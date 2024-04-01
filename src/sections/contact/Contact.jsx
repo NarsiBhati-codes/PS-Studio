@@ -42,7 +42,7 @@ function Contact() {
             </div>
             <div className="item">
                 <h1>Phone</h1>
-                <span>+91 12323 23223</span>
+                <span>+91 8955782648</span>
             </div>
         </div>
         <div className="formContainer">

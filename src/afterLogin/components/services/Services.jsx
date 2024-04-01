@@ -54,46 +54,16 @@ function Services() {
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Repellendus dolor 
-                    suscipit corporis beatae ullam,
-                    dignissimos aut quasi adipisci!
-                    Explicabo reiciendis sequi quia natus
+                <h2 contentEditable >Custom MERN stack application development</h2>
+                <p contentEditable>
+                    This involves developing web applications from scratch using the MERN stack. This can include building everything from simple CRUD (create, read, update, delete) applications to complex enterprise-level applications.
                 </p>
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Repellendus dolor 
-                    suscipit corporis beatae ullam,
-                    dignissimos aut quasi adipisci!
-                    Explicabo reiciendis sequi quia natus
-                </p>
-                <button>Go</button>
-            </motion.div>
-            <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Repellendus dolor 
-                    suscipit corporis beatae ullam,
-                    dignissimos aut quasi adipisci!
-                    Explicabo reiciendis sequi quia natus
-                </p>
-                <button>Go</button>
-            </motion.div>
-            <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Repellendus dolor 
-                    suscipit corporis beatae ullam,
-                    dignissimos aut quasi adipisci!
-                    Explicabo reiciendis sequi quia natus
+                <h2 contentEditable>MERN stack web development</h2>
+                <p contentEditable>
+                    This involves developing the front-end and back-end of web applications using the MERN stack. This can include developing the user interface (UI) using React, the application programming interface (API) using Express, and the database using MongoDB.
                 </p>
                 <button>Go</button>
             </motion.div>

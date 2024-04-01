@@ -1,0 +1,12 @@
+version: "1"
+services:
+  nginx-react:
+    image: reactapp:latest
+    container_name: containercraft
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    enviroment:
+      NODE_ENV: production

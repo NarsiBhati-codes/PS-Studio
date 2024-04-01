@@ -3,7 +3,7 @@ import hero2 from './hero2.png'
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
 import Narsi from './NarsiBhati.png'
-import Mohit from './Mohit.png'
+import Gagandeep from './GaganDeep.jpeg'
 
 import footerLogo from './footer-logo.svg'
 import headerLogo from './header-logo.svg'
@@ -18,7 +18,7 @@ export {
     hero2,
 
     Narsi,
-    Mohit,
+    Gagandeep,
     customer1,
     customer2,
 
