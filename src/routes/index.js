@@ -1,11 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import ErrorPage from "../pages/ErrorPage";
-import Login from '../pages/auth/Login';
-import Register from "../pages/auth/Register";
-import Home from "../afterLogin/Home";
-import Profile from "../afterLogin/Profile";
-import Portfolio from "../afterLogin/portfolios/Portfilio1/Portfolio";
+import ErrorPage from "./ErrorPage";
+import Signup from "../form_s/Signup";
+import Login from "../form_s/Login";
 
 export const routes = createBrowserRouter ([
     {
@@ -18,21 +15,21 @@ export const routes = createBrowserRouter ([
         Component: Login,
     },
     {
-        path: "/register",
-        Component: Register,
+        path: "/signup",
+        Component: Signup,
     },
-    {
-        path: "/Home",
-        Component: Home,
-    },
-    {
-        path: "/Profile",
-        Component: Profile,
-    },
-    {
-        path: "/Portfolio",
-        Component: Portfolio,
-    },
+    // {
+    //     path: "/Home",
+    //     Component: Home,
+    // },
+    // {
+    //     path: "/Profile",
+    //     Component: Profile,
+    // },
+    // {
+    //     path: "/Portfolio",
+    //     Component: Portfolio,
+    // },
 ]);
 
 export default routes
